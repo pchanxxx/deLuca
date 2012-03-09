@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="portal_javascripts">
+    <javascript authenticated="False" cacheable="True" compression="safe"
+        conditionalcomment="" cookable="True" enabled="True"
+        expression="request/HTTP_X_THEME_ENABLED | nothing"
+        id="++theme++deluca.sitetheme/js/jquery.scrollto.js" inline="False" />
+    <javascript authenticated="False" cacheable="True" compression="safe"
+        conditionalcomment="" cookable="True" enabled="True"
+        expression="request/HTTP_X_THEME_ENABLED | nothing"
+        id="++theme++deluca.sitetheme/js/main.js" inline="False" />
+</object>
