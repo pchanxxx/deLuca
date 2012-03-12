@@ -49,6 +49,7 @@
 	    
 	    <!-- Copy over the contents of the page body -->
 	    <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content="#edit-bar" css:theme="#editbar" />
         
         <!-- Portal Columns -->
         <replace css:content-children="#portal-column-one > *" css:theme-children="#sidebar-left" />
