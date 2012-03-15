@@ -8,6 +8,9 @@
 
   <five:registerPackage package="." initialize=".initialize" />
 
+  <!-- Include browser directory in order to use z3c.jbot -->
+  <include package=".browser" />
+  
   <genericsetup:registerProfile
       name="default"
       title="deluca.sitetheme"

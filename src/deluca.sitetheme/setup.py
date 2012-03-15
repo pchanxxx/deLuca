@@ -26,6 +26,7 @@ setup(name='deluca.sitetheme',
       install_requires=[
           'setuptools',
           'plone.app.theming',
+          'z3c.jbot',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
