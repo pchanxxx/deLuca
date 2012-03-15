@@ -202,12 +202,14 @@ html, body {
     border-right: 2px solid #d7d7d7;
     margin-top: 20px;
 }
-
+#content-area p {
+    padding-right: 20px;
+}
 #special-area {
     height: 150px;
     border-bottom: 3px solid #bf2433;
     border-top: 3px solid #bf2433;
-    width: 600px;
+    width: 670px;
     background: url(../images/presse_button.png) 0px 15px no-repeat transparent;
 }
 
@@ -285,16 +287,41 @@ html, body {
 }
 
 #pic {
-    background: url(../images/placeholder_slideshow.png) no-repeat 0% 0% transparent;
-    width: 604px;
+    background: url(../images/placeholder_slideshow.png) no-repeat -3px 0px transparent;
+    width: 684px;
     height: 260px;
     margin-left: 40px;
     margin-top: 10px;
-    border: 4px solid #fff;
-
-
-
+    border: 6px solid #fff;
 }
+
+.section-trattoria #pic {
+    background: url(../images/trattoria.png) no-repeat 0px 0px transparent;
+}
+
+.section-oeffnungszeiten #pic {
+     background: url(../images/oeffnungszeiten.png) no-repeat 0px 0px transparent;   
+}
+
+.section-catering #pic {
+     background: url(../images/catering.png) no-repeat 0px 0px transparent;   
+}
+
+.section-reservierung #pic {
+     background: url(../images/reservierung.png) no-repeat 0px 0px transparent;   
+}
+
+.section-stellenangebote #pic {
+     background: url(../images/stellenangebote.png) no-repeat 0px 0px transparent;   
+}
+
+.section-speisekarte #pic {
+        background: url(../images/speisekarte.png) no-repeat 0px 0px transparent;
+}
+.section-anfahrt #pic {
+     background: url(../images/anfahrt.png) no-repeat 0px 0px transparent;   
+}
+
 #search {
     width: 300px;
     float:right;
@@ -344,13 +371,13 @@ html, body {
     font-style: italic;
     background:transparent;
     margin-top: 150px;
-    margin-left: 40px;
+    margin-left: 110px;
 }
 #main-nav .selected a,
 #main-nav a:hover {
-    background: url(../images/menu.png) 0px 0px no-repeat transparent;
+    background: url(../images/menu.png) 0em -0.2em no-repeat transparent;
     width: 150px;
-    height: 37px;
+    height: 26px;
     padding-left: 55px;
     filter: opacity: 10;
     -moz-opacity: 10;
@@ -358,10 +385,14 @@ html, body {
 }
 #main-nav a {
     display: block;
-    padding: 0.5em 0.75em 0.1em 2.75em;
+    padding-left: 55px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 4px;
     background: transparent;
     white-space: normal;
     width: 150px;
+    height: 26px;
 
 }
 
@@ -442,7 +473,7 @@ html, body {
 /* @group sidebar */
 
 #sidebar {
-
+    font-family: tahoma;
 }
 
 #social-buttons {
@@ -456,7 +487,7 @@ html, body {
     height: 40px;
     width:160px;
     margin-top: -8px;
-    margin-left: 20px;
+    margin-left: auto;
 }
 
 #yt_g {
@@ -581,6 +612,7 @@ html, body {
 /* Special case of #content - TinyMCE */
 body#content {
     margin: 1em;
+    font-family: tahoma;
 }
 
 #content h1 {
@@ -604,7 +636,7 @@ body#content {
     background: url(../images/logo_small_green.png) 0px 4px no-repeat transparent;
     padding-left: 30px;
     height: 25px;
-    width:150px;
+    width:160px;
     color: #127944;
     font-family: georgia;
     font-weight: lighter;
@@ -622,7 +654,6 @@ body#content {
     padding-left: 15px;
     padding-top: 15px;
 }
-//*[@id="parent-fieldname-title"]
 #content p,
 #content table,
 #content dl,
@@ -635,7 +666,7 @@ dt.portletHeader {
     background: url(../images/logo_redgreen.png) 80px 15px no-repeat transparent;
     padding-top: 50px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: lighter;
     height: 35px;
     width: 200px;
@@ -650,7 +681,7 @@ dt.portletHeader {
 
 dl.portlet dd.portletItem span.portletItemDetails{
     color: #127944;
-    margin-left: 75px;
+    margin-left: 65px;
     font-weight: bold;
     font-size: 100%;
 }
@@ -1867,18 +1898,43 @@ div.overlay .formControls a {
 #footer {
     background: url(../images/footer.png) repeat-x 0% 0% transparent;
 	color: White;
-	font-family: "Lucida Grande", Verdana, FreeSans, sans-serif;
+/*	font-family: "Lucida Grande", Verdana, FreeSans, sans-serif;*/
+    font-family: tahoma;
 	margin: 0 auto;
 	padding: 1em 0;
 	width: 100%;
     height: 40px;
 }
 
+#footer-content {
+    width: 1020px;
+    margin: auto;
+}
+
 #footer p {
 	font-size: 0.7em;
 }
 
+#copyright {
+    font-size: 90%;
+}
 
+#footer_logo {
+    background: url(../images/logo_white.png) 0px 0px no-repeat transparent;
+    height: 80px;
+    width: 80px;
+    margin-top: -35px;
+    margin-left: -320px;
+
+} 
+
+#impressum a ,
+#impressum a:hover,
+#impressum a:visited, {
+    color: #fff;
+
+
+}
 /* @end */
 
 /* @group Invisibles */
