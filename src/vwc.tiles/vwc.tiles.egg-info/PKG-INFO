@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: vwc.tiles
+Version: 1.0
+Summary: Package providing tiles compatible with plone.app.tiles
+Home-page: http://dist.vorwaerts-werbung.de
+Author: Vorwaerts Werbung GbR
+Author-email: hallo@vorwaerts-werbung.de
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

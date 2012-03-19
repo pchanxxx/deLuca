@@ -1,0 +1,61 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="vwc.tiles">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <grok:grok package="." />
+  <includeDependencies package="." />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="vwc.tiles"
+      directory="profiles/default"
+      description="Installs the vwc.tiles package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  
+  <plone:tile
+      name="vwc.tiles.richtext"
+      title="VWC rich text tile"
+      description="A tile containing rich text"
+      add_permission="cmf.ModifyPortalContent"
+      schema=".tile.IRichTextTileData"
+      class=".tile.RichTextTile"
+      permission="zope2.View"
+      for="*"
+      />
+      
+  <plone:tile
+      name="vwc.tiles.plaintext"
+      title="VWC plain text tile"
+      description="A tile containing plain text"
+      add_permission="cmf.ModifyPortalContent"
+      schema=".tile.IPlainTextTileData"
+      class=".tile.PlainTextTile"
+      permission="zope2.View"
+      for="*"
+      />
+
+  <browser:resource
+      name="vwc.tiles.css"
+      file="static/vwc.tiles.css"
+      layer=".interfaces.IVwcTilesLayer"
+      />
+
+  <browser:resource
+      name="vwc.tiles.js"
+      file="static/vwc.tiles.js"
+      layer=".interfaces.IVwcTilesLayer"
+      />
+
+
+  <subscriber handler=".handlers.notifyModified" />
+
+</configure>

@@ -1,0 +1,6 @@
+<layers>
+    <layer
+        name="vwc.tiles"
+        interface="vwc.tiles.interfaces.IVwcTilesLayer"
+    />
+</layers>

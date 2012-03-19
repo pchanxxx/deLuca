@@ -1,0 +1,8 @@
+setuptools
+five.grok
+lxml
+plone.app.dexterity
+plone.app.blocks
+plone.app.textfield
+plone.app.tiles
+plone.tiles

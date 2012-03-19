@@ -1,0 +1,23 @@
+/* CSS for tiles */
+
+.tile-editable {
+    position: relative;
+    outline: 2px dashed #9d261d;
+    min-height: 1.5em;
+}
+
+.tile-editable:hover {
+    outline: 2px dashed #b8b8b8;
+}
+
+.tile-edit-link {
+    display: none !important;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    z-index: 500;
+}
+
+.tile-editable:hover .tile-edit-link {
+    display: block !important;
+}

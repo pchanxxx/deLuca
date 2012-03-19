@@ -37,7 +37,6 @@ class Icontentview(form.Schema, IImageScaleTraversable):
     # models/contentview.xml to define the content type
     # and add directives here as necessary.
     
-   form.model("models/contentview.xml")
  
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
@@ -45,6 +44,7 @@ class Icontentview(form.Schema, IImageScaleTraversable):
 # in separate view classes.
 
 class contentview(dexterity.Item):
+    grok.implements(Icontentview)
    
     # Add your class methods and properties here
 
@@ -59,8 +59,12 @@ class contentview(dexterity.Item):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
-class SampleView(grok.View):
+#class SampleView(grok.View):
+#    grok.context(Icontentview)
+#    grok.require('zope2.View')
+
+class View(grok.View):
     grok.context(Icontentview)
     grok.require('zope2.View')
-    
+    grok.name('view')   
     # grok.name('view')
